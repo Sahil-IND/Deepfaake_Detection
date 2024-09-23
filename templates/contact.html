@@ -1,0 +1,88 @@
+script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+<script>
+
+	function loadGoogleTranslate()
+
+	{
+
+		new google.translate.TranslateElement("myid")
+
+	}
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="color: white;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AboutUs- RakshAI</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <style>
+    body {
+      background-image: url("/static/images/finalwall1.jpeg"); /* Replace with the actual image path */
+      background-size: cover;
+     
+
+      
+     
+    }
+  </style>
+
+  <nav class="navbar">
+    <div class="logo">RakshAI</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><div id="myid">Choose Language</div></li>
+    </ul>
+  </nav>
+   
+  </div>
+  <font color="White">
+    
+    
+    <div class="container"> <!--container class for contact page-->
+        
+        
+    
+        <form action="mailto:vinze200410@gmail.com?subject=I have an issue"> <!--contact form starts-->
+            
+          
+          <label>Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required autocomplete="on" required oninvalid="this.setCustomValidity('Enter Name Here')"
+          oninput="this.setCustomValidity('')" /><br/><br/>
+          <label>Age</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Age.." maxlength="3">
+          <label>Email</label>
+          <input type="text" id="lname" name="email" placeholder="Your Email.." maxlength="100" required oninvalid="this.setCustomValidity('Enter Email Here')"
+          oninput="this.setCustomValidity('')" autocomplete="on"/><br/><br/>
+      
+          <label for="country">City</label>
+          <select name="city">
+            <option>--select city--</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Kolkata</option>
+            <option value="Pune">Mumbai</option>
+          </select>
+      
+          <label for="subject">Ellaborate</label>
+          <textarea id="subject" name="subject" placeholder="Ellaborate Issue.." style="height:100px" maxlength="200"></textarea>
+          <label>Upload Supporting Document</label><br/><br/>
+          <input type="file" name="file" value="file" accept=".pdf,.png" /><br/><br/>
+          <input type="submit"  value="submit" />  
+      
+         
+        </form> <!--end of form-->
+    </div> <!--end of container-->
+</font>
+</body>
+</html>
